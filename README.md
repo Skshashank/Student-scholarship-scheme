@@ -1,2 +1,2 @@
 # Student-scholarship-scheme
-To provide scholarship to needy and deserving candidate in a secure way.
+To provide scholarships to needy and deserving candidates in a secure way by using Blockchain technology.

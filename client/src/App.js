@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Popup from 'reactjs-popup';
 import "./App.css";
 
-const App = () => {
+const App = () => { // react states ... temp data store websites dispaly
   const [account, setAccount] = useState("");
   const [contract, setContract] = useState("");
   
@@ -47,7 +47,7 @@ const App = () => {
   // }
 
   const register = async () => {
-    
+    // register function call 
     await contract.methods.register(name,address,caste,income,mark1,mark2,mark3).send({from: account}, (error)=>{
       if(!error){
              console.log("success");
@@ -83,10 +83,10 @@ const App = () => {
       
 
       setdetails({
-        name: l[0],
-      ScholarshipAmount: l[1],
-      Tokens: l[2], 
-      Marks: l[3]
+        name: l.name,
+      ScholarshipAmount: l.scholaramount,
+      Tokens: l.tokens, 
+      Marks: l.totalmarks
       });
   }
 
